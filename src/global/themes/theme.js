@@ -1,5 +1,6 @@
-export const theme = {
+const theme = {
   colors: {
+    white50: "rgba(255, 255, 255, 0.51)",
     white: "#FFFFFF",
     black: "#000000",
     black10: "#200505",
@@ -16,3 +17,5 @@ export const theme = {
     text400: "Roboto_400Regular",
   },
 };
+
+export default theme;

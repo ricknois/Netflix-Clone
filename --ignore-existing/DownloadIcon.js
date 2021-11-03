@@ -4,19 +4,18 @@ import Svg, { Path } from "react-native-svg";
 function SvgDownloadIcon(props) {
   return (
     <Svg
-      height="60%"
-      width="60%"
-      viewBox="0 0 55 56"
+      width={44}
+      height={54}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <Path
         d="M22 0v43m0 0L8.5 32.5M22 43l13-10.5"
-        stroke={props.color}
+        stroke="#fff"
         strokeWidth={5}
       />
-      <Path fill={props.color} d="M0 49h44v5H0z" />
+      <Path fill="#fff" d="M0 49h44v5H0z" />
     </Svg>
   );
 }
