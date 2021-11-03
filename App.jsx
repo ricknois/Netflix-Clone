@@ -10,6 +10,8 @@ import {
 } from "@expo-google-fonts/montserrat";
 import { Roboto_400Regular } from "@expo-google-fonts/roboto";
 
+import Routes from "./src/router";
+
 export default function App() {
   let [fontsLoaded] = useFonts({
     Montserrat_400Regular,
@@ -24,7 +26,8 @@ export default function App() {
   } else {
     return (
       <>
-        <StatusBar style="auto" />
+        <Routes />
+        <StatusBar style="auto" translucent={false} hidden />
       </>
     );
   }
