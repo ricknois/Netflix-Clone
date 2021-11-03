@@ -1,5 +1,4 @@
 import React from "react";
-import { View, Text } from "react-native";
 import { Container, Input, Icons } from "./style";
 import { SearchIcon } from "../../../assets/svg";
 import theme from "../../global/themes/theme";

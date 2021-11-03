@@ -27,7 +27,7 @@ export default function App() {
     return (
       <>
         <Routes />
-        <StatusBar style="auto" translucent={false} />
+        <StatusBar style="auto" translucent={false} hidden />
       </>
     );
   }
