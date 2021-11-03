@@ -7,6 +7,7 @@ const theme = {
     black20: "#202020",
     black30: "#1A1A1A",
     black40: "#171717",
+    black50: "#323232",
   },
 
   fonts: {

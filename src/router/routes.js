@@ -11,7 +11,7 @@ import {
 import Icon from "../../assets/Home Icon.png";
 import { Image } from "react-native";
 import theme from "../global/themes/theme";
-import { Background } from "../Components";
+import { Background, HeaderSearch } from "../Components";
 
 export default function Router() {
   const { Navigator, Screen } = createBottomTabNavigator();
@@ -40,7 +40,14 @@ export default function Router() {
       })}
     >
       <Screen name="Home" component={Home} options={{}} />
-      <Screen name="Search" component={Home} options={{}} />
+      <Screen
+        name="Search"
+        component={Home}
+        options={{
+          headerShown: true,
+          header: ({ navigation, route, options }) => <HeaderSearch />,
+        }}
+      />
       <Screen name="Coming Soon" component={Home} options={{}} />
       <Screen name="Downloads" component={Home} options={{}} />
       <Screen name="More" component={Home} options={{}} />
